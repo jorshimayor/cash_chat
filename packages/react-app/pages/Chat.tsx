@@ -9,7 +9,12 @@ import {
   ListItem,
   Card,
   InputBase,
+  Modal,
+  Box,
 } from "@mui/material";
+import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+import BorrowModal from "../components/BorrowModal";
+import InvoiceModal from "../components/InvoiceModal";
 
 interface Message {
   id: number;
@@ -17,7 +22,28 @@ interface Message {
   sender: "user" | "assistant";
 }
 
-const Chat: React.FC = () => {
+interface ChatProps {
+  context: "borrow" | "invoice";
+}
+
+const modalStyle = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: { md: "600px", sm: "90%", xs: "90%" },
+  height: "300px",
+  padding: "24px",
+  bgcolor: "#FFF",
+  border: "1px solid var(--Linear, #01B8BE)",
+  borderRadius: "24px",
+  boxShadow: 24,
+  gap: "56px",
+
+  // p: 4
+};
+
+const Chat: React.FC<ChatProps> = ({ context }) => {
   const [messages, setMessages] = React.useState<Message[]>([
     { id: 1, text: "Hello! How can I help you today?", sender: "assistant" },
     { id: 2, text: "I have a question about my order.", sender: "user" },
@@ -28,6 +54,23 @@ const Chat: React.FC = () => {
     },
   ]);
   const [inputValue, setInputValue] = React.useState("");
+  const [isModalOpen, setIsModalOpen] = React.useState(false);
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
+  const getModalContent = (): React.ReactElement => {
+    switch (context) {
+      case "borrow":
+        return <BorrowModal />;
+      case "invoice":
+        return <InvoiceModal />;
+      default:
+        // Return an empty fragment as the default case to satisfy TypeScript
+        return <React.Fragment />;
+    }
+  };
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(event.target.value);
@@ -116,6 +159,7 @@ const Chat: React.FC = () => {
           padding: "10px 20px",
         }}
       >
+        <AttachMoneyIcon onClick={toggleModal} />
         <InputBase
           sx={{ ml: 1, flex: 1, mt: 1 }}
           placeholder="Type your transaction"
@@ -150,6 +194,13 @@ const Chat: React.FC = () => {
           </defs>
         </svg>
       </Paper>
+      <Modal
+        open={isModalOpen}
+        onClose={toggleModal}
+        aria-labelledby="modal-title"
+      >
+        <Box sx={modalStyle}>{getModalContent()}</Box>
+      </Modal>
     </Stack>
   );
 };
