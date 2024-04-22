@@ -26,8 +26,12 @@ const HomePage = () => {
       <Grid container spacing={2}>
         <Grid item sm={12} xs={12} md={3}>
           <Card
-            sx={{ background: "#5840bb", borderRadius: "8px" }}
-            onClick={() => router.push("/Chat")}
+            sx={{
+              background: "#5840bb",
+              borderRadius: "8px",
+              cursor: "pointer",
+            }}
+            onClick={() => router.push("/Borrow")}
           >
             <CardContent>
               <Stack
@@ -69,7 +73,14 @@ const HomePage = () => {
           </Card>
         </Grid>
         <Grid item sm={12} xs={12} md={3}>
-          <Card sx={{ background: "#5840bb", borderRadius: "8px" }}>
+          <Card
+            sx={{
+              background: "#5840bb",
+              borderRadius: "8px",
+              cursor: "pointer",
+            }}
+            onClick={() => router.push("/Invoice")}
+          >
             <CardContent>
               <Stack
                 direction="column"
