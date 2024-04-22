@@ -24,180 +24,86 @@ const HomePage = () => {
   return (
     <Box sx={{ mr: "5px", ml: "5px" }}>
       <Grid container spacing={2}>
-        <Grid item sm={12} xs={12} md={4}>
+        <Grid item sm={12} xs={12} md={3}>
           <Card
             sx={{ background: "#5840bb", borderRadius: "8px" }}
             onClick={() => router.push("/Chat")}
           >
             <CardContent>
               <Stack
-                direction="row"
-                spacing={2}
+                direction="column"
                 sx={{
                   display: "flex",
                   alignItems: "center",
-                  justifyContent: "space-between",
+                  justifyContent: "center",
                 }}
               >
-                <Stack direction="column" spacing={0.5}>
-                  <Typography
-                    sx={{
-                      color: "#FFF",
-                      fontSize: "12px",
-                      fontWeight: 400,
-                      textDecoration: "underline",
-                    }}
-                  >
-                    EUR/USD
-                  </Typography>
-                  <Typography
-                    sx={{
-                      color: "#70b03f",
-                      fontSize: "12px",
-                      fontWeight: 400,
-                      textDecoration: "underline",
-                    }}
-                  >
-                    +0.0004(+0.367%)
-                  </Typography>
-                </Stack>
-                <Stack direction="column" spacing={0.5}>
-                  <Typography
-                    sx={{
-                      color: "#b8b9e6",
-                      fontSize: "12px",
-                      fontWeight: 100,
-                    }}
-                  >
-                    &rarr; 1.11636 USD
-                  </Typography>
-                  <Typography
-                    sx={{
-                      color: "#b8b9e6",
-                      fontSize: "12px",
-                      fontWeight: 100,
-                    }}
-                  >
-                    &larr; 1.11700 USD
-                  </Typography>
-                </Stack>
+                <Typography
+                  sx={{ color: "#FFF", fontWeight: 600, fontSize: "14px" }}
+                >
+                  BORROW A QUICK FUND
+                </Typography>
               </Stack>
               {/* <ForexChart /> */}
             </CardContent>
           </Card>
         </Grid>
-        <Grid item sm={12} xs={12} md={4}>
+        <Grid item sm={12} xs={12} md={3}>
           <Card sx={{ background: "#5840bb", borderRadius: "8px" }}>
             <CardContent>
               <Stack
-                direction="row"
-                spacing={2}
+                direction="column"
                 sx={{
                   display: "flex",
                   alignItems: "center",
-                  justifyContent: "space-between",
+                  justifyContent: "center",
                 }}
               >
-                <Stack direction="column" spacing={0.5}>
-                  <Typography
-                    sx={{
-                      color: "#FFF",
-                      fontSize: "12px",
-                      fontWeight: 400,
-                      textDecoration: "underline",
-                    }}
-                  >
-                    USD/JPY
-                  </Typography>
-                  <Typography
-                    sx={{
-                      color: "#bd5c8d",
-                      fontSize: "12px",
-                      fontWeight: 400,
-                      textDecoration: "underline",
-                    }}
-                  >
-                    -0.086(-0.0798%)
-                  </Typography>
-                </Stack>
-                <Stack direction="column" spacing={0.5}>
-                  <Typography
-                    sx={{
-                      color: "#b8b9e6",
-                      fontSize: "12px",
-                      fontWeight: 100,
-                    }}
-                  >
-                    &rarr; 1.11636 USD
-                  </Typography>
-                  <Typography
-                    sx={{
-                      color: "#b8b9e6",
-                      fontSize: "12px",
-                      fontWeight: 100,
-                    }}
-                  >
-                    &larr; 1.11700 USD
-                  </Typography>
-                </Stack>
+                <Typography
+                  sx={{ color: "#FFF", fontWeight: 600, fontSize: "14px" }}
+                >
+                  PAY YOUR MERCHANT(VERIFIED)
+                </Typography>
               </Stack>
             </CardContent>
           </Card>
         </Grid>
-        <Grid item sm={12} xs={12} md={4}>
+        <Grid item sm={12} xs={12} md={3}>
           <Card sx={{ background: "#5840bb", borderRadius: "8px" }}>
             <CardContent>
               <Stack
-                direction="row"
-                spacing={2}
+                direction="column"
                 sx={{
                   display: "flex",
                   alignItems: "center",
-                  justifyContent: "space-between",
+                  justifyContent: "center",
                 }}
               >
-                <Stack direction="column" spacing={0.5}>
-                  <Typography
-                    sx={{
-                      color: "#FFF",
-                      fontSize: "12px",
-                      fontWeight: 400,
-                      textDecoration: "underline",
-                    }}
-                  >
-                    GPB/USD
-                  </Typography>
-                  <Typography
-                    sx={{
-                      color: "#70b03f",
-                      fontSize: "12px",
-                      fontWeight: 400,
-                      textDecoration: "underline",
-                    }}
-                  >
-                    +0.0004(+0.367%)
-                  </Typography>
-                </Stack>
-                <Stack direction="column" spacing={0.5}>
-                  <Typography
-                    sx={{
-                      color: "#b8b9e6",
-                      fontSize: "12px",
-                      fontWeight: 100,
-                    }}
-                  >
-                    &rarr; 1.11636 USD
-                  </Typography>
-                  <Typography
-                    sx={{
-                      color: "#b8b9e6",
-                      fontSize: "12px",
-                      fontWeight: 100,
-                    }}
-                  >
-                    &larr; 1.11700 USD
-                  </Typography>
-                </Stack>
+                <Typography
+                  sx={{ color: "#FFF", fontWeight: 600, fontSize: "14px" }}
+                >
+                  SEND AN INVOICE
+                </Typography>
+              </Stack>
+            </CardContent>
+          </Card>
+        </Grid>
+        <Grid item sm={12} xs={12} md={3}>
+          <Card sx={{ background: "#5840bb", borderRadius: "8px" }}>
+            <CardContent>
+              <Stack
+                direction="column"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Typography
+                  sx={{ color: "#FFF", fontWeight: 600, fontSize: "14px" }}
+                >
+                  PAY YOUR FRIEND VIA LINKS
+                </Typography>
               </Stack>
             </CardContent>
           </Card>
