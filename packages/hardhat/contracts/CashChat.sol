@@ -51,6 +51,7 @@ contract CashChat {
         address indexed serviceProvider,
         uint256 amount
     );
+
     event InvoicePaid(uint256 id);
 
     constructor(address _cUSD) {
