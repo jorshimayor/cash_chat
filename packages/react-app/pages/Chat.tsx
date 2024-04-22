@@ -15,6 +15,7 @@ import {
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import BorrowModal from "../components/BorrowModal";
 import InvoiceModal from "../components/InvoiceModal";
+import MerchantModal from "../components/MerchantModal";
 
 interface Message {
   id: number;
@@ -23,7 +24,7 @@ interface Message {
 }
 
 interface ChatProps {
-  context: "borrow" | "invoice";
+  context: "borrow" | "invoice" | "merchant";
 }
 
 const modalStyle = {
@@ -66,6 +67,8 @@ const Chat: React.FC<ChatProps> = ({ context }) => {
         return <BorrowModal />;
       case "invoice":
         return <InvoiceModal />;
+      case "merchant":
+        return <MerchantModal />;
       default:
         // Return an empty fragment as the default case to satisfy TypeScript
         return <React.Fragment />;
