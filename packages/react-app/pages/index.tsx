@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
 import { useAccount } from "wagmi";
+import ChatBox from "./ChatBox";
+import HomePage from "../components/HomePage";
+import FirstPage from "../components/FirstPage";
+import Chat from "./Chat";
 
 export default function Home() {
   const [userAddress, setUserAddress] = useState("");
