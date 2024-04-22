@@ -1,4 +1,3 @@
-// pages/CurrencyChart.js
 import { Line } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -34,7 +33,7 @@ const data = {
   ],
   datasets: [
     {
-      label: "USD to EUR",
+      label: "NGN to cUSD",
       data: [1.1, 1.2, 1.15, 1.17, 1.16, 1.15, 1.14],
       borderColor: "#5840bb",
       backgroundColor: "rgba(75, 192, 192, 0.5)",
@@ -46,7 +45,7 @@ const options = {
   responsive: true,
   plugins: {
     legend: {
-      position: "top" as const, // Ensure this is a valid, expected string literal
+      position: "top" as const,
     },
     title: {
       display: true,

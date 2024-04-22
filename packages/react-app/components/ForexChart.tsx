@@ -24,7 +24,7 @@ const data = {
   labels: ["January", "February", "March", "April", "May", "June"],
   datasets: [
     {
-      label: "USD to EUR",
+      label: "NGN to cUSD",
       data: [1.1, 1.2, 1.3, 1.4, 1.5, 1.6],
       borderColor: "rgb(75, 192, 192)",
       backgroundColor: "rgba(75, 192, 192, 0.5)",
@@ -46,5 +46,18 @@ const options = {
 };
 
 export default function ForexChart() {
+  const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: "top" as const,
+      },
+      title: {
+        display: true,
+        text: "Monthly Exchange Rate",
+      },
+    },
+  };
+
   return <Line data={data} options={options} />;
 }

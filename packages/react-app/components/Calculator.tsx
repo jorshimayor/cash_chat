@@ -51,9 +51,9 @@ const Converter = () => {
                 id="states"
                 className="bg-[#f1eeff] border border-gray-300 text-gray-900 text-sm rounded-full block w-28 p-2.5"
               >
-                <option selected>USD</option>
-                <option>EUR</option>
-                <option>JPY</option>
+                <option selected>NGN</option>
+                <option>ETB</option>
+                <option>cUSD</option>
               </select>
             </div>
           </Stack>
@@ -81,10 +81,10 @@ const Converter = () => {
                 id="states"
                 className="bg-[#f1eeff] border border-gray-300 text-gray-900 text-sm rounded-full block w-28 p-2.5"
               >
-                <option>EUR</option>
-                <option selected>USD</option>
+                <option>NGN</option>
+                <option selected>cUSD</option>
 
-                <option>JPY</option>
+                <option>ETB</option>
               </select>
             </div>
           </Stack>
@@ -112,9 +112,9 @@ const Converter = () => {
                 id="states"
                 className="bg-[#f1eeff] border border-gray-300 text-gray-900 text-sm rounded-full block w-28 p-2.5"
               >
-                <option>JPY</option>
-                <option>EUR</option>
-                <option selected>USD</option>
+                <option>cUSD</option>
+                <option>ETB</option>
+                <option selected>NGN</option>
               </select>
             </div>
           </Stack>
