@@ -46,10 +46,34 @@ export default function Header() {
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                   <a
-                    href="#"
+                    href="/"
                     className="inline-flex items-center border-b-2 border-[#FFF] px-1 pt-1 text-sm font-medium text-[#FFF]"
                   >
                     Home
+                  </a>
+                </div>
+                <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
+                  <a
+                    href="/Invoice"
+                    className="inline-flex items-center border-b-2 border-[#FFF] px-1 pt-1 text-sm font-medium text-[#FFF]"
+                  >
+                    Invoice
+                  </a>
+                </div>
+                <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
+                  <a
+                    href="/Borrow"
+                    className="inline-flex items-center border-b-2 border-[#FFF] px-1 pt-1 text-sm font-medium text-[#FFF]"
+                  >
+                    Borrow
+                  </a>
+                </div>
+                <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
+                  <a
+                    href="/Pay"
+                    className="inline-flex items-center border-b-2 border-[#FFF] px-1 pt-1 text-sm font-medium text-[#FFF]"
+                  >
+                    Pay
                   </a>
                 </div>
               </div>
@@ -70,10 +94,31 @@ export default function Header() {
             <div className="space-y-1 pt-2 pb-4">
               <Disclosure.Button
                 as="a"
-                href="#"
-                className="block border-l-4 border-[#FFF] py-2 pl-3 pr-4 text-base font-medium text-black"
+                href="/"
+                className="block border-l-4 border-[#FFF] py-2 pl-3 pr-4 text-base font-medium text-white"
               >
                 Home
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
+                href="/Invoice"
+                className="block border-l-4 border-[#FFF] py-2 pl-3 pr-4 text-base font-medium text-white"
+              >
+                Invoice
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
+                href="/Borrow"
+                className="block border-l-4 border-[#FFF] py-2 pl-3 pr-4 text-base font-medium text-white"
+              >
+                Borrow
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
+                href="/Pay"
+                className="block border-l-4 border-[#FFF] py-2 pl-3 pr-4 text-base font-medium text-white"
+              >
+                Pay
               </Disclosure.Button>
               {/* Add here your custom menu elements */}
             </div>
