@@ -8,7 +8,7 @@ describe("CashChat", function () {
   beforeEach(async () => {
 
     // Deploy mock cUSD token
-    const ERC20 = await ethers.getContractFactory("ERC20");
+    const ERC20 = await ethers.getContractFactory("IERC20");
     cUSD = await ERC20.deploy("cUSD", "cUSD");
 
     // Deploy CashChat contract

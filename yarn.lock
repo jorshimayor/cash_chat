@@ -2336,6 +2336,11 @@
     table "^6.8.0"
     undici "^5.14.0"
 
+"@openzeppelin/contracts@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.npmjs.org/@openzeppelin/contracts/-/contracts-5.0.2.tgz"
+  integrity sha512-ytPc6eLGcHHnapAZ9S+5qsdomhjo6QBHTDRRBFfTxXIpsicMhVPouPgmUPebZZZGX7vt9USA+Z+0M0dSVtSUEA==
+
 "@parcel/watcher-wasm@^2.4.1":
   version "2.4.1"
   resolved "https://registry.npmjs.org/@parcel/watcher-wasm/-/watcher-wasm-2.4.1.tgz"
