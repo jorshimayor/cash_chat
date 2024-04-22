@@ -18,6 +18,7 @@ import ForexChart from "./ForexChart";
 import NewsFeed from "./NewsFeed";
 import Calculator from "./Calculator";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const HomePage = () => {
   const router = useRouter();
@@ -42,12 +43,32 @@ const HomePage = () => {
                   justifyContent: "center",
                 }}
               >
-                <Typography
-                  sx={{ color: "#FFF", fontWeight: 600, fontSize: "14px" }}
-                >
-                  BORROW A QUICK FUND
-                </Typography>
+                <Stack direction="row" spacing={2}>
+                  <Stack
+                    direction="row"
+                    spacing={2}
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <Image
+                      className="rounded-full"
+                      src="/borrow.webp"
+                      width="60"
+                      height="60"
+                      alt="Celo Logo"
+                    />
+                    <Typography
+                      sx={{ color: "#FFF", fontWeight: 600, fontSize: "14px" }}
+                    >
+                      BORROW A QUICK FUND
+                    </Typography>
+                  </Stack>
+                </Stack>
               </Stack>
+
               {/* <ForexChart /> */}
             </CardContent>
           </Card>
@@ -63,11 +84,28 @@ const HomePage = () => {
                   justifyContent: "center",
                 }}
               >
-                <Typography
-                  sx={{ color: "#FFF", fontWeight: 600, fontSize: "14px" }}
+                <Stack
+                  direction="row"
+                  spacing={2}
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
                 >
-                  PAY YOUR MERCHANT(VERIFIED)
-                </Typography>
+                  <Image
+                    className="rounded-full"
+                    src="/pay-merchant.webp"
+                    width="60"
+                    height="60"
+                    alt="Celo Logo"
+                  />
+                  <Typography
+                    sx={{ color: "#FFF", fontWeight: 600, fontSize: "14px" }}
+                  >
+                    PAY YOUR VERIFIED MERCHANT
+                  </Typography>
+                </Stack>
               </Stack>
             </CardContent>
           </Card>
@@ -90,11 +128,28 @@ const HomePage = () => {
                   justifyContent: "center",
                 }}
               >
-                <Typography
-                  sx={{ color: "#FFF", fontWeight: 600, fontSize: "14px" }}
+                <Stack
+                  direction="row"
+                  spacing={2}
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
                 >
-                  SEND AN INVOICE
-                </Typography>
+                  <Image
+                    className="rounded-full"
+                    src="/send-invoice.webp"
+                    width="60"
+                    height="60"
+                    alt="Celo Logo"
+                  />
+                  <Typography
+                    sx={{ color: "#FFF", fontWeight: 600, fontSize: "14px" }}
+                  >
+                    SEND AN INVOICE
+                  </Typography>
+                </Stack>
               </Stack>
             </CardContent>
           </Card>
@@ -110,11 +165,28 @@ const HomePage = () => {
                   justifyContent: "center",
                 }}
               >
-                <Typography
-                  sx={{ color: "#FFF", fontWeight: 600, fontSize: "14px" }}
+                <Stack
+                  direction="row"
+                  spacing={2}
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
                 >
-                  PAY YOUR FRIEND VIA LINKS
-                </Typography>
+                  <Image
+                    className="rounded-full"
+                    src="/pay-friend-with-link.webp"
+                    width="60"
+                    height="60"
+                    alt="Celo Logo"
+                  />
+                  <Typography
+                    sx={{ color: "#FFF", fontWeight: 600, fontSize: "14px" }}
+                  >
+                    PAY YOUR FRIEND VIA LINKS
+                  </Typography>
+                </Stack>
               </Stack>
             </CardContent>
           </Card>
