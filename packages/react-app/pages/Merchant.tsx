@@ -13,8 +13,8 @@ import {
 } from "@mui/material";
 import Chat from "./Chat";
 
-const Borrow = () => {
-  return <Chat context="borrow" />;
+const Merchant = () => {
+  return <Chat context="merchant" />;
 };
 
-export default Borrow;
+export default Merchant;

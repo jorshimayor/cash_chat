@@ -74,7 +74,10 @@ const HomePage = () => {
           </Card>
         </Grid>
         <Grid item sm={12} xs={12} md={3}>
-          <Card sx={{ background: "#5840bb", borderRadius: "8px" }}>
+          <Card
+            sx={{ background: "#5840bb", borderRadius: "8px" }}
+            onClick={() => router.push("/Merchant")}
+          >
             <CardContent>
               <Stack
                 direction="column"
