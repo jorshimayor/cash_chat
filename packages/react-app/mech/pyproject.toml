@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "cashchat"
+version = "0.1.0"
+description = "CashChat offers a revolutionary platform designed to simplify digital payments, enhance financial decision-making, and foster a thriving ecosystem of decentralized finance (DeFi)."
+authors = ["Joshua Obafemi <jorshimayor@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
